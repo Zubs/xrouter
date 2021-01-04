@@ -1,0 +1,12 @@
+{
+    "name": "zubs/php_router",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Zubs",
+            "email": "zubairidrisaweda@gmail.com"
+        }
+    ],
+    "require": {}
+}
