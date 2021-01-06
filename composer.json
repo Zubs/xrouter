@@ -8,5 +8,10 @@
             "email": "zubairidrisaweda@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "./"
+        }
+    },
     "require": {}
 }
