@@ -1,13 +1,21 @@
 <?php
 
+namespace App\App;
+
 /**
  * Class Router
  */
 class Router
 {
-	
-	function __construct(argument)
+	protected array $routes = [];
+
+	public function get($path, $callback)
 	{
-		# code...
+		$this->routes['get'][$path] = $callback;
+	}
+
+	public function resolve()
+	{
+		var_dump($_SERVER);
 	}
 }
