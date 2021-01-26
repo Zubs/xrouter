@@ -1,6 +1,6 @@
 {
     "name": "zubs/xrouter",
-    "type": "project",
+    "type": "package",
     "license": "MIT",
     "authors": [
         {
