@@ -3,20 +3,18 @@
 namespace App\App;
 
 /**
- * Class Application
+ * @author Zubs <zubairidrisaweda@gmail.com>
+ * @package App\App
  */
 class Application
 {
 	public Router $router;
+	public Request $request;
 
 	public function __construct()
 	{
-		$this->router = new Router();
-	}
-
-	public function get($path, $callback)
-	{
-		$this->router->get($path, $callback);
+		$this->request = new Request();
+		$this->router = new Router($this->request);
 	}
 
 	public function run()

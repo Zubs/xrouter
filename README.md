@@ -1,9 +1,6 @@
-# php_router
+# XRouter
 
-This contains code files from my "Routing In PHP I" article.
-
-## Article Link
-[Routing In PHP I](https://dev.to/zubs)
-
-## Project Link
-[Routing In PHP I](https://routing-in-php.herokuapp.com/)
+## Installation
+```
+composer require zubs/xrouter
+```

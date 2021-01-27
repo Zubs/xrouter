@@ -1,5 +1,6 @@
 {
     "name": "zubs/xrouter",
+    "description": "Lightweight PHP router",
     "type": "package",
     "license": "MIT",
     "authors": [
