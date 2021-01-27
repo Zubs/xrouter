@@ -2,7 +2,7 @@
 
 require_once __DIR__.'\..\vendor\autoload.php';
 
-use App\App\Application;
+use XRouter\Application;
 
 $app = new Application();
 

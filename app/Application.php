@@ -1,10 +1,10 @@
 <?php
 
-namespace App\App;
+namespace XRouter;
 
 /**
  * @author Zubs <zubairidrisaweda@gmail.com>
- * @package App\App
+ * @package XRouter
  */
 class Application
 {

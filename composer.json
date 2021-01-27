@@ -1,6 +1,10 @@
 {
     "name": "zubs/xrouter",
     "description": "Lightweight PHP router",
+    "keywords": [
+        "router",
+        "routing"
+    ],
     "type": "package",
     "license": "MIT",
     "authors": [
@@ -11,7 +15,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "App\\": "./"
+            "XRouter\\": "./app/"
         }
     },
     "require": {}

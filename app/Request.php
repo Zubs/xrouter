@@ -1,10 +1,10 @@
 <?php
 
-namespace App\App;
+namespace XRouter;
 
 /**
  * @author Zubs <zubairidrisaweda@gmail.com>
- * @package App\App
+ * @package XRouter
  */
 class Request
 {	
@@ -15,11 +15,14 @@ class Request
 		if ($position === false) {
 			return $path;
 		}
+
+		// Get path without query parameters
 		return substr($path, 0, $position);
 	}
 
 	public function getMethod()
 	{
+		// Get HTTP method in lowercase
 		return strtolower($_SERVER['REQUEST_METHOD']);
 	}
 }
