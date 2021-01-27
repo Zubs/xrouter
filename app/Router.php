@@ -9,19 +9,27 @@ namespace XRouter;
 class Router
 {
 	public Request $request;
+	public Response $response;
 	protected array $routes = [];
 
 	/**
-	 * @param App\Core\Request $request;
+	 * @param XRouter\Request $request;
+	 * @param XRouter\Response $response;
 	 */
-	public function __construct(Request $request)
+	public function __construct(Request $request, Response $response)
 	{
 		$this->request = $request;
+		$this->response = $response;
 	}
 
 	public function get($route, $callback)
 	{
 		$this->routes['get'][$route] = $callback;
+	}
+
+	public function post($route, $callback)
+	{
+		$this->routes['post'][$route] = $callback;
 	}
 
 	public function render($view)
@@ -38,7 +46,9 @@ class Router
 
 		// If no callback, return 404
 		if ($callback === false) {
-			return '<h1 style="text-align: center; margin: 300px;">404 | Not Found</h1>';
+			$this->response->setStatusCode(404);
+			include_once __DIR__."/view/404.php";
+			exit;
 		}
 
 		// If view (string callback), return the view
