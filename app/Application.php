@@ -17,8 +17,13 @@ class Application
 		$this->router = new Router($this->request);
 	}
 
+	public function get($route, $callback)
+	{
+		$this->router->get($route, $callback);
+	}
+
 	public function run()
 	{
-		$this->router->resolve();
+		echo $this->router->resolve();
 	}
 }

@@ -6,7 +6,7 @@ use XRouter\Application;
 
 $app = new Application();
 
-$app->router->get("/", function () {
+$app->get("/", function () {
 	return "Hello World";
 });
 

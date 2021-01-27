@@ -29,6 +29,12 @@ $app->router->get("/", function () {
 });
 ```
 
+Or you pass in a view (a PHP file), instead of a closure. Like so:
+```
+$app->router->get("/", "welcome");
+```
+This looks for a ```welcome.php``` file in the ```views``` folder in the project root.
+
 And finally, run the application
 ```
 $app->run();
