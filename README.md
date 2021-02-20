@@ -17,21 +17,21 @@ require_once __DIR__.'\..\vendor\autoload.php';
 
 Now, you can use the ```XRouter``` class to create an application.
 ```
-use XRouter\Application;
+use XRouter\XRouter;
 
-$app = new Application();
+$app = new XRouter();
 ```
 
 The created application can now take requests, as such:
 ```
-$app->router->get("/", function () {
+$app->get("/", function () {
 	return "Hello World";
 });
 ```
 
 Or you pass in a view (a PHP file), instead of a closure. Like so:
 ```
-$app->router->get("/", "welcome");
+$app->get("/", "welcome");
 ```
 This looks for a ```welcome.php``` file in the ```views``` folder in the project root.
 
