@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>XRouter | 404</title>
+        <title>XRouter | 204</title>
 
         <!-- Styles -->
         <style>

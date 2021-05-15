@@ -35,7 +35,8 @@ class Router
 	public function render($view)
 	{
 		if(!include_once __DIR__."../../../../../views/$view.php") {
-			include_once __DIR__."/view/404.php";
+			$this->response->setStatusCode(204);
+			include_once __DIR__."/view/204.php";
 			exit;
 		}
 	}
