@@ -34,7 +34,11 @@ class Router
 
 	public function render($view)
 	{
-		include_once __DIR__."../../../../views/$view.php";
+		if(!include_once __DIR__."../../../../../views/$view.php") {
+			$this->response->setStatusCode(204);
+			include_once __DIR__."/view/204.php";
+			exit;
+		}
 	}
 
 	public function resolve()

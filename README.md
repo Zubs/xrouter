@@ -11,9 +11,8 @@ In your ```index.php``` file:
 
 Require autoload, to have access to all of the packages classes
 ```
-require_once __DIR__.'\..\vendor\autoload.php';
+require_once __DIR__.'\vendor\autoload.php';
 ```
-> It is assumed that your ```index.php``` file is in a ```public``` folder.
 
 Now, you can use the ```XRouter``` class to create an application.
 ```

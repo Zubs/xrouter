@@ -6,7 +6,7 @@ namespace XRouter;
  * @author Zubs <zubairidrisaweda@gmail.com>
  * @package XRouter
  */
-class Application
+class XRouter
 {
 	public Router $router;
 	public Request $request;
